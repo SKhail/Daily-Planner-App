@@ -50,7 +50,7 @@ const theDays = [
 
 //functionality for the current date 
 function currentMainDate() {
- let currentDate = dayjs().format("DDo MMM YYYY");
+ let currentDate = dayjs().format("D MMM YYYY");
  $("#currentDay").text(currentDate);
 }
 
