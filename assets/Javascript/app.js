@@ -1,18 +1,11 @@
 
-//Include the current Date 
+//Include the current Date  / Time
 function currentMainDate() {
  let currentDate = dayjs().format("D MMM YYYY");
- $("#currentDay").text(currentDate);
+ $("#currentDate").text(currentDate);
  console.log("Current Date", currentDate);
-
 }
 
-// The ability to see the time 
-function currentMainTime() {
- let currentTime = dayjs().format("HH:mm");
- $("#currentTime").text(currentTime);
- console.log("Current Time", currentTime);
-}
 
 //The ability to save your task in within the block and utilise local storage
 function saveBlockTime() {
@@ -66,6 +59,6 @@ function timeTracking() {
 //Executing Functions
 timeTracking();
 saveBlockTime();
-currentMainTime();
+
 currentMainDate();
 console.log("App.JS is working");
