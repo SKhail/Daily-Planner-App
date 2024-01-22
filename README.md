@@ -22,8 +22,9 @@ While developing this application using jQuery and DateJS. I encounted a challen
     git clone https://github.com/SKhail/Daily-Planner-App.git
     cd Daily-Planner-App
 2.  Once cloned, you can start the application
-3.  You will have it in your local machines and can start the Application.
-4.  Refer to the screenshot below to view the application
+3.  Access the deployed application [Deployed Site Link] (https://skhail.github.io/Daily-Planner-App/)
+4.  You will have it in your local machines and can start the Application.
+5.  Refer to the screenshot below to view the application
 
 ![Daily-Planner-App]
 
