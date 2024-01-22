@@ -1,5 +1,5 @@
 
-//The current Date / Time
+//The current Date for the header
 function currentMainDate() {
  let currentDate = dayjs().format("D MMM YYYY");
  $("#currentDate").text(currentDate);
@@ -22,7 +22,7 @@ function saveBlockTime() {
  });
 }
 
-//create a function that can change each time block based on the colours of: grey colour associating the past, red associating the present and green associating the future
+
 function timeTracking() {
  //current time
  const compareTime = dayjs().format("HH");
@@ -47,7 +47,6 @@ function timeTracking() {
   }
 
   // alert feature:  when the time has gone passed
-
   if (blockTime < compareTime) {
    const alertTime = `
    <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -70,32 +69,22 @@ function loadSavedData() {
  $(".time-block").each(function () {
   const time = $(this).attr("id");
   const text = localStorage.getItem(time);
-  $(this).siblings(".description").val(text);
+  // $(this).siblings(".description").val(text);
+
+  //check if text is not null before setting it 
+  if (text !== null) {
+   $(this).find(".description").val(text);
+  }
  });
 }
 
 
 //Executing Functions
-loadSavedData();
 timeTracking();
+loadSavedData();
 saveBlockTime();
 
 currentMainDate();
-console.log("App.JS is working");
 
 
-
-
-// if (blockTime < compareTime) {
-//  $(this).removeClass("future");
-//  $(this).removeClass("present");
-//  $(this).removeClass("past");
-// } else if (blockTime === compareTime) {
-//  $(this).removeClass("past");
-//  $(this).removeClass("future");
-//  $(this).removeClass("present");
-// } else {
-//  $(this).removeClass("future");
-//  $(this).removeClass("past");
-//  $(this).removeClass("present");
-// }
+// console.log("App.JS is working");
