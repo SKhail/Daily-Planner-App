@@ -101,3 +101,7 @@ header {
   max-width: 800px;
   margin: 20px auto;
 }
+
+.alert-container {
+  z-index: 11;
+}
