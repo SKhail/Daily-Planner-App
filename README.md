@@ -26,7 +26,7 @@ While developing this application using jQuery and DateJS. I encounted a challen
 4.  You will have it in your local machines and can start the Application.
 5.  Refer to the screenshot below to view the application
 
-![Daily-Planner-App] <img src="assets/images/Work Day Scheduler.gif" width="40" height="40"/>
+        <img src="assets/images/Work Day Scheduler.gif" width="200" height="200"/>
 
 ## Feature
 
